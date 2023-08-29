@@ -5,6 +5,8 @@ import { mainnet } from "viem/chains";
 
 const client = createPublicClient({
   chain: mainnet,
+  // Add an alchemy url here to speed things up.
+  // eg. transport: http("https://eth-mainnet.alchemyapi.io/v2/your-api-key")
   transport: http(),
   batch: {
     multicall: true,
